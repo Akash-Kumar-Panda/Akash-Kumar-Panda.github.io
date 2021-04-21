@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>USER REGISTRATION PAGE</title>
+	<style>
+		body div:last-child {
+			padding-bottom: 50px;
+		}
+		body {
+			/*overflow: hidden;*/
+			margin: 0px;
+		}
+		.attr{
+			margin: 0px auto;  
+			font-size: 115%;
+			width: 250px; 
+			float: left;
+		}
+		.attr:hover{
+			font-size: 120%;
+			font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			color: white;
+			background-color: #8e9aaf;
+			margin: 0px auto;  
+			font-size: 115%;
+			width: 250px; 
+			float: left;
+		}
+		h3:hover{
+			font-size: 120%;
+			font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			color: white;
+			background-color: #8e9aaf;
+			
+			width: 250px;
+		}
+		.radio:hover{
+			font-size: 120%;
+			font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			color: white;
+			background-color: #8e9aaf;
+			width: 250px;
+		}
+		.val{
+			margin: 0px auto;  
+			float: left
+			width: 600px;  
+		}
+		header {
+			background-color: #8e9aaf;
+			padding: 0px;
+			margin: 0px;
+			text-align: center;
+			font-size: 25px;
+			color: white;
+			position: sticky;
+			top: 0;
+		}
+		footer {
+			background-color: #8e9aaf;
+			padding: 20px;
+			text-align: center;
+			font-size: 15px;
+			color: white;
+		}
+		input:focus {
+			background-color: yellow;
+		}
+		input[class=val]{
+			width: 300px;
+			height: 15px;
+		}
+		input[type="submit"]{
+			background-image: linear-gradient( #feeafa, #8e9aaf);
+			color: white;
+		}
+		input[type="submit"]:hover{
+			background-image: linear-gradient(#8e9aaf, #feeafa);
+			color: white;
+		}
+		textarea[class=val]{
+			width: 300px;
+			height: 15px;
+			font-size:135%;
+			resize: none;
+		}
+		textarea:focus {
+			background-color: yellow;
+		}
+	</style>  
+  </head>
+  <body>
+	<p style="text-align:center; margin:0px"><img src="Images/Register.jpg" height=200px ></p>
+    <header>
+		<h1 style="text-align:center; margin: 0px" ><img src="Images/logo.jpg" height= 50px>REGISTRATION FORM</h1>
+	</header>
+	<div style="background-color:#feeafa; ">
+		<div style="margin: 0px 150px">
+			<form>
+				<h3 style="padding-top: 18px;">PERSONAL DETAILS</h3>
+				
+				<label class="attr" for="fname">First Name:</label>
+				<input class="val" type="text" id="fname" name="fname" >
+				<br>
+				<label class="attr" for="mname">Middle Name:</label>
+				<input class="val" type="text" id="mname" name="mname" >
+				<br>
+				<label class="attr" for="lname">Last Name:</label>
+				<input class="val" type="text" id="lname" name="lname">
+				<br>
+				<label class="attr" for="email">User Email:</label>
+				<input class="val" type="email" id="email" name="email">
+				<br>
+				<label class="attr" for="phoneno">Phoneno:</label>
+				<input class="val" type="tel" id="phoneno" name="phoneno">
+				<br>
+				<label class="attr" for="password">Password:</label>
+				<input class="val" type="password" id="pwd" name="Password">
+				<br>
+				<label class="attr" for="confirmPassword">Confirm Password:</label>
+				<input class="val" type="confirmPassword" id="pwd" name="Password">
+				<br>
+				<label class="attr" for="DOB">Date Of Birth:</label>
+				<input class="val" type="date" id="DOB" name="DOB">
+				<br>
+				<div style="margin: 0px auto">
+					<hr>
+					<h3>GENDER</h3>
+
+					<input type="radio" id="male" name="gender" value="male">
+					<label for="male">Male</label>
+					<input type="radio" id="female" name="gender" value="female">
+					<label for="female">Female</label>
+					<input type="radio" id="other" name="gender" value="other">
+					<label for="other">Other</label>
+				</div>
+				<hr>
+				<h3>CURRENT ADDRESS</h3>
+				<label class="attr" for="Address_Line_1">Address Line 1:</label>
+				<textarea class="val" id="Address_Line_1" name="Address_Line_1" ></textarea>
+				<br>
+				<label class="attr" for="Address_Line_2">Address Line 2:</label>
+				<textarea class="val" id="Address_Line_2" name="Address_Line_2" rows="1" cols="80"></textarea>
+				<br>
+				<label class="attr" for="city">City:</label>
+				<textarea class="val" id="city" name="city" rows="1" cols="15"></textarea>
+				<br>
+				<label class="attr" for="State">State</label>
+				<textarea class="val" id="State" name="State" rows="1" cols="15"></textarea>
+				<br>
+				<label class="attr" for="Country">Country</label>
+				<textarea class="val" id="Country" name="Country" rows="1" cols="15"></textarea>
+				<br>
+				<label class="attr" for="ZipCode">Zip Code</label>
+				<textarea class="val" id="ZipCode" name="ZipCode" rows="1" cols="15"></textarea>
+				<br>
+				<hr>
+				<h3>PERMANENT ADDRESS</h3>
+				
+				<label class="attr" for="Address_Line_12">Address Line 1:</label>
+				<textarea class="val" id="Address_Line_12" name="Address_Line_1" rows="1" cols="80"></textarea>
+				<br>
+				<label class="attr" for="Address_Line_22">Address Line 2:</label>
+				<textarea class="val" id="Address_Line_22" name="Address_Line_2" rows="1" cols="80"></textarea>
+				<br>
+				<label class="attr" for="city2">City:</label>
+				<textarea class="val" id="city2" name="city" rows="1" cols="15"></textarea>
+				<br>
+				<label class="attr" for="State2">State</label>
+				<textarea class="val" id="State2" name="State" rows="1" cols="15"></textarea>
+				<br>
+				<label class="attr" for="Country2">Country</label>
+				<textarea class="val" id="Country2" name="Country" rows="1" cols="15"></textarea>
+				<br>
+				<label class="attr" for="ZipCode2">Zip Code</label>
+				<textarea class="val" id="ZipCode2" name="ZipCode" rows="1" cols="15"></textarea>
+				<hr>
+				<h3>PERSONAL INTERESTS</h3>
+				
+				<input type="checkbox" id="Sports" name="Sports">
+				<label for="Sports">Sports</label>
+				<br>
+				<input type="checkbox" id="Books" name="Books">
+				<label for="Books">Books</label>
+				<br>
+				<input type="checkbox" id="Computer&Software" name="Computer&Software">
+				<label for="Computer&Software">Computer And Software</label>
+				<br>
+				<input type="checkbox" id="Fashion" name="Fashion">
+				<label for="Fashion">Fashion</label>
+				<br>
+				<input type="checkbox" id="Photography" name="Photography">
+				<label for="Photography">Photography</label>
+				<br>
+				<input type="submit" width= 350px height= 150px style="border-radius: 15px 25px;padding: 24px 28px; margin: 30px auto; border-style: inset">
+			</form>
+		</div>
+	</div>
+	<footer style="background-color:#8e9aaf " height=500px>
+		<p>Copyright @ 2021</p>
+	</footer></div>
+  </body>
+
+</html>

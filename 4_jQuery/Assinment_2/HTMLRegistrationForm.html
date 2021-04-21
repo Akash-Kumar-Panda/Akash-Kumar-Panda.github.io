@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Registration Form</title>
+    <link rel="icon" href="Images/logo-new.png" />
+  </head>
+  <body>
+    <div class="container" id="registration">
+      <h1>User Registration Form</h1>
+      <form name="myForm" id="myForm" autocomplete="off">
+        <fieldset class="fieldset1">
+          <legend class="legend1">Basic Details</legend>
+          <div class="row">
+            <label for="profile" class="attr"
+              >Upload Profile Picture &nbsp;<b>*</b></label
+            >
+            <img id="preview" src="Images/Blank-Profile.png" alt="your image" />
+            <input
+              type="file"
+              id="profile"
+              name="profile"
+              class="val"
+              autocomplete="off"
+              placeholder="Profile"
+              accept="image/png, image/jpeg"
+            />
+
+            <p id="profileP"></p>
+          </div>
+          <div class="row">
+            <label for="fname" class="attr">First Name &nbsp;<b>*</b></label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              class="val"
+              autocomplete="off"
+              placeholder="First Name"
+            />
+
+            <p id="fNameP"></p>
+          </div>
+          <div class="row">
+            <label for="mname" class="attr">Middle Name &nbsp;<b>*</b></label>
+            <input
+              type="text"
+              id="mname"
+              name="mname"
+              class="val"
+              autocomplete="off"
+              placeholder="Middle Name"
+            />
+
+            <p id="mNameP"></p>
+          </div>
+          <div class="row">
+            <label for="lname" class="attr">Last Name&nbsp;<b>*</b></label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              class="val"
+              autocomplete="off"
+              placeholder="Last Name"
+            />
+
+            <p id="lNameP"></p>
+          </div>
+          <div class="row">
+            <label for="email" class="attr">EmailID&nbsp;<b>*</b></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="val"
+              placeholder="Email ID"
+            />
+
+            <p id="emailP"></p>
+          </div>
+          <div class="row">
+            <label for="pan" class="attr">PAN no. &nbsp;<b>*</b></label>
+            <input
+              type="text"
+              id="pan"
+              name="pan"
+              class="val"
+              autocomplete="off"
+              placeholder="PAN no."
+            />
+
+            <p id="panP"></p>
+          </div>
+          <div class="row">
+            <label for="aadhaar" class="attr">Aadhaar No. &nbsp;<b>*</b></label>
+            <input
+              type="text"
+              id="aadhaar"
+              name="aadhaar"
+              class="val"
+              autocomplete="off"
+              placeholder="Aadhaar No."
+            />
+
+            <p id="aadhaarP"></p>
+          </div>
+        </fieldset>
+        <fieldset class="fieldset2">
+          <legend class="legend1">Additional Details</legend>
+          <fieldset class="fieldset2" id="contactList">
+            <legend class="legend1">Contact number</legend>
+            <div class="row" id="primContNum">
+              <label for="cnum" class="attr"
+                >Primary Contact number&nbsp;<b>*</b></label
+              >
+              <input
+                type="text"
+                id="cnum"
+                name="cnum"
+                class="val tenMargin"
+                placeholder="Contact number"
+              />
+              <img id="addPhone" class="addImage" src="Images/Add.png" />
+
+              <p id="scnumP0" class="comment"></p>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset2">
+            <legend class="legend1">Address Book</legend>
+            <!--Full address element-->
+            <div id="addressBook">
+              <div id="primaryAddress">
+                <div class="row">
+                  <h6>Primary Address</h6>
+                  <label for="al1_0" class="attr1"
+                    >Address Line 1&nbsp;<b>*</b></label
+                  >
+                  <textarea
+                    id="al1_0"
+                    name="al1_0"
+                    class="valAL"
+                    rows="4"
+                    placeholder="Address Line 1"
+                  ></textarea>
+
+                  <p id="al1P_0" class="comment"></p>
+                </div>
+
+                <div class="row">
+                  <label for="al2_0" class="attr1">Address Line 2&nbsp;</label>
+                  <textarea
+                    id="al2_0"
+                    name="al2_0"
+                    class="valAL"
+                    rows="4"
+                    placeholder="Address Line 2"
+                  ></textarea>
+                </div>
+                <div class="row">
+                  <label for="city_0" class="attr2">City&nbsp;<b>*</b></label>
+                  <input
+                    type="text"
+                    id="city_0"
+                    name="acnum"
+                    class="val"
+                    placeholder="City"
+                  />
+
+                  <p class="comment" id="cityP_0"></p>
+                </div>
+                <div class="row">
+                  <label for="stateSecondary_0" class="attrState"
+                    >State &nbsp;<b>*</b></label
+                  >
+                  <select
+                    id="stateSecondary_0"
+                    name="state"
+                    class="valState"
+                  ></select>
+                </div>
+                <div class="row">
+                  <label for="country_0" class="valCountry"
+                    >Country &nbsp;<b>*</b></label
+                  >
+                  <select
+                    id="country_0"
+                    name="country_0"
+                    class="valCountrySelect"
+                  >
+                    <option value="select" selected>Select</option>
+                    <option value="India">India</option>
+                    <option value="Australia">Australia</option>
+                  </select>
+                </div>
+                <div class="row">
+                  <label for="pinCode_0" class="attr2"
+                    >Pin Code&nbsp;<b>*</b></label
+                  >
+                  <input
+                    type="number"
+                    id="pinCode_0"
+                    name="pinCode_0"
+                    class="val"
+                    placeholder="Pin Code"
+                  />
+
+                  <p class="comment" id="pinCodeP_0"></p>
+                </div>
+              </div>
+            </div>
+            <p class="addOrSubtract">
+              <img id="addAddress" class="addImage" src="Images/Add.png" />Click
+              on '+' button to add multiple addresses
+            </p>
+          </fieldset>
+        </fieldset>
+        <p id="captcha">
+          <img src="Images/refresh.png" id="refresh" />
+
+          <b id="operand1">12</b>
+          <b id="operator">/</b>
+          <b id="operand2">6</b>
+          <b id="exp">=</b>
+          <input type="text" id="ans" class="val" />
+        </p>
+        <input type="submit" value="SUBMIT" class="submit" />
+      </form>
+    </div>
+    <div class="container" id="result">
+      <h1>Recorded Result</h1>
+      <div name="myResult" id="myResult">
+        <fieldset class="fieldset1">
+          <legend class="legend1">Basic Details</legend>
+          <div class="row">
+            <label for="resultProfile" class="attr"
+              >Uploaded Profile Picture &nbsp;<b>*</b></label
+            >
+            <img
+              id="resultPreview"
+              src="Images/Blank-Profile.png"
+              alt="your image"
+            />
+          </div>
+          <div class="row">
+            <label for="resultfname" class="attr"
+              >First Name &nbsp;<b>*</b></label
+            >
+            <p id="resultfNameP" class="resultBeautify"></p>
+          </div>
+          <div class="row">
+            <label for="resultmname" class="attr"
+              >Middle Name &nbsp;<b>*</b></label
+            >
+            <p id="resultmNameP" class="resultBeautify"></p>
+          </div>
+          <div class="row">
+            <label for="resultlname" class="attr"
+              >Last Name&nbsp;<b>*</b></label
+            >
+            <p id="resultlNameP" class="resultBeautify"></p>
+          </div>
+          <div class="row">
+            <label for="resultemail" class="attr">EmailID&nbsp;<b>*</b></label>
+            <p id="resultemailP" class="resultBeautify"></p>
+          </div>
+          <div class="row">
+            <label for="resultpan" class="attr">PAN no. &nbsp;<b>*</b></label>
+            <p id="resultpanP" class="resultBeautify"></p>
+          </div>
+          <div class="row">
+            <label for="resultaadhaar" class="attr"
+              >Aadhaar No. &nbsp;<b>*</b></label
+            >
+            <p id="resultaadhaarP" class="resultBeautify"></p>
+          </div>
+        </fieldset>
+        <fieldset class="fieldset2">
+          <legend class="legend1">Additional Details</legend>
+          <fieldset class="fieldset2" id="resultContactList">
+            <legend class="legend1">Contact number</legend>
+            <div class="row" id="resultPrimContNum">
+              <label class="attr">Primary Contact number&nbsp;<b>*</b></label>
+              <p id="resultscnumP0" class="resultBeautify"></p>
+            </div>
+            <div class="row hideEle" id="resultSecContNum1">
+              <label class="attr">Secondary Contact number&nbsp;</label>
+              <p id="resultscnumP1" class="resultBeautify"></p>
+            </div>
+            <div class="row hideEle" id="resultSecContNum2">
+              <label class="attr">Secondary Contact number&nbsp;</label>
+              <p id="resultscnumP2" class="resultBeautify"></p>
+            </div>
+            <div class="row hideEle" id="resultSecContNum3">
+              <label class="attr">Secondary Contact number&nbsp;</label>
+              <p id="resultscnumP3" class="resultBeautify"></p>
+            </div>
+            <div class="row hideEle" id="resultSecContNum4">
+              <label class="attr">Secondary Contact number&nbsp;</label>
+              <p id="resultscnumP4" class="resultBeautify"></p>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset2">
+            <legend class="legend1">Address Book</legend>
+            <!--Full address element-->
+            <div id="addressBook">
+              <div class="row">
+                <h6>Primary Address</h6>
+                <p id="resultP_0" class="resultBeautify"></p>
+              </div>
+              <div class="row hideEle" id="resultSecAdd1">
+                <h6>Secondary Address 1</h6>
+                <p id="resultP_1" class="resultBeautify"></p>
+              </div>
+              <div class="row hideEle" id="resultSecAdd2">
+                <h6>Secondary Address 2</h6>
+                <p id="resultP_2" class="resultBeautify"></p>
+              </div>
+              <div class="row hideEle" id="resultSecAdd3">
+                <h6>Secondary Address 3</h6>
+                <p id="resultP_3" class="resultBeautify"></p>
+              </div>
+              <div class="row hideEle" id="resultSecAdd4">
+                <h6>Secondary Address 4</h6>
+                <p id="resultP_4" class="resultBeautify"></p>
+              </div>
+            </div>
+          </fieldset>
+        </fieldset>
+      </div>
+    </div>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="jQuery/jquery.min.js"></script>
+    <script type="text/javascript" src="jQueryFile.js"></script>
+  </body>
+</html>

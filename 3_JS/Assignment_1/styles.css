@@ -1,0 +1,173 @@
+@keyframes example {
+    from  {background-color:rgb(206, 91, 206)}/*{background-image: linear-gradient(to right, rgb(206, 91, 206), rgb(32, 173, 55));}*/
+    to    {background-color:rgb(32, 173, 55)} /*{background-image: linear-gradient(to right, rgb(32, 173, 55),  rgb(206, 91, 206));}*/
+}
+  
+body{
+    /*background-image: linear-gradient(to right, rgb(206, 91, 206), rgb(32, 173, 55));*/
+    background-repeat: no-repeat;
+    margin: 0px;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-name: example;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+.container{
+    height: inherit;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    border-radius: 70px; 
+    margin: 4% 6% 4% 6%;
+    border-style: solid; 
+    border-color: grey;
+    background-color:rgba(240, 255, 240, 0.6);
+}
+h1{
+    font-size: 55px; 
+    text-align: center;
+    text-shadow: 1px 1px 2px black, -5px -5px 15px rgb(206, 91, 206), 5px 5px 15px rgb(32, 173, 55); 
+    color: white;
+}
+.fieldset1{
+    border-radius: 20px;
+    max-width: 80%;
+    margin: auto;
+    background-image: url(Images/paper.gif);
+    opacity: 0.9;
+}
+.fieldset2{
+    border-radius: 20px;
+    max-width: 80%;
+    margin: auto;
+    background-image: url(Images/paper.gif);
+    opacity: 0.9;
+    margin-top: 10px;
+}
+.legend1{
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+    text-shadow: 2px 2px 5px black;
+    color: white;
+}
+.row{
+    width: inherit; 
+    margin: 20px 10%;
+}
+.attr{
+    width: 25%; 
+    display: inline; 
+    float: left;
+}
+.attrState{
+    width: 25%; 
+    padding-top: 7px; 
+    sdisplay: inline; 
+    float: left;
+}
+.attr1{
+    width: 27%; 
+    display: inline; 
+    float: left;
+}
+.attr2{
+    width: 26%; 
+    display: inline; 
+    float: left; 
+    padding-top: 12px
+}
+.attr b{
+    color: red;
+}
+.val{/*style="box-shadow: 2px 2px 5px black; border-radius:8px; height: 23px; width: 55%; display: inline; margin: 10px; background-image: linear-gradient(to right, rgba(206, 91, 206, 0.2), rgba(32, 173, 55, 0.2)); color: black; font-weight:bold"*/
+    box-shadow: 2px 2px 5px black; 
+    border-radius:8px; 
+    height: 23px; 
+    width: 55%; 
+    display: inline;
+    background-image: linear-gradient(to right, rgba(206, 91, 206, 0.2), rgba(32, 173, 55, 0.2)); 
+    color: black; 
+    font-weight:bold;
+}
+.valAL{
+    box-shadow: 2px 2px 5px black; 
+    border-radius:13px; 
+    border: 2px solid black; 
+    width: 55%; 
+    display: inline; 
+    resize: none; 
+    background-image: linear-gradient(to right, rgba(206, 91, 206, 0.2), rgba(32, 173, 55, 0.2)); 
+    color: black; 
+    font-weight:bold;
+}
+.valState{
+    box-shadow: 2px 2px 5px black; 
+    border-radius:8px; 
+    border: 2px solid black; 
+    width: 55%; 
+    display: inline; 
+    margin-left:10px; 
+    padding: 5px; 
+    background-image: linear-gradient(to right, rgba(206, 91, 206, 0.2), rgba(32, 173, 55, 0.2)); 
+    color: black; 
+    font-weight:bold;
+}
+.valCountry{
+    width: 25%; 
+    padding-top: 7px; 
+    display: inline; 
+    float: left;
+}
+label b{
+    color: red;
+}
+.genderDiv{
+    height: 30px; 
+    width: inherit; 
+    margin: 10px 10% 40px 10%; 
+    box-sizing: border-box;
+}
+.genderRadio{
+    height: 23px; 
+    width: 55%; 
+    display: inline;
+}
+.submit{
+    font-size: 20px;
+    margin: 20px auto;
+    height: 76px;
+    width: 226px;
+    box-sizing: border-box;
+    border: 3px solid black;
+    box-shadow: 0 0 15px black, 0 0 15px grey;
+    text-shadow: 0 0 5px grey;
+    display: block;
+    background-image: linear-gradient(to right, rgba(32, 173, 55, 0.6), rgba(206, 91, 206, 0.6));
+    color: black;
+    font-weight: bold;
+}
+.zeroMargin{
+    margin: 0;
+}
+.tenMargin{
+    margin: 10px;
+}
+.newsLetter{
+    height: 60px; 
+    width: inherit; 
+    margin: 10px 10% 40px 10%; 
+    box-sizing: border-box;
+}
+.sNews{
+    width: 25%;  
+    display: inline; 
+    float: left;
+    margin: 10px;
+}
+.newsRadio{
+    height: 29px; 
+    width: 45%; 
+    margin-top: 30px;
+    display: inline;
+    box-sizing: border-box;
+}

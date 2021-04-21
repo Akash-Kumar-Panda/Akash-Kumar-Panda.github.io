@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Registration Form
+        </title>
+        <link rel="icon" href="Images/logo.png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>HTML Registration Form</h1>
+            <form name="myForm" onsubmit="return validateform()">
+                <fieldset class="fieldset1">
+                    <legend class="legend1">
+                        Signup Details
+                    </legend>
+                    <!--
+                        First Name [Mandatory]
+                        Last Name [Mandatory]
+                        Email [Mandatory]
+                        Password [Mandatory]
+                        Confirm-Password [Mandatory]
+                    -->
+                    <div class="row">
+                        <label for="fname" class="attr">First Name&nbsp;<b>*</b></label>
+                        <input type="text" id="fname" name="fname" class="val" value="Akash"><!--required-->
+                    </div>
+                    <div class="row">
+                        <label for="lname" class="attr">Last Name&nbsp;<b>*</b></label>
+                        <input type="text" id="lname" name="lname" class="val" value="Panda"><!--required-->
+                    </div>
+                    <div class="row">
+                        <label for="email" class="attr">EmailID&nbsp;<b>*</b></label>
+                        <input type="email" id="email" name="email" class="val" value="Ak00@outlook.com"><!--required-->
+                    </div>
+                    <div class="row">
+                        <label for="pwd" class="attr">Password&nbsp;<b>*</b></label>
+                        <input type="password" id="pwd" name="pwd" class="val" value="123456789"><!--required-->
+                    </div>
+                    <div class="row">
+                        <label for="cpwd" class="attr">Confirm Password&nbsp;<b>*</b></label>
+                        <input type="password" id="cpwd" name="cpwd" class="val" value="123456789"><!--required-->
+                    </div>
+                </fieldset>
+                <fieldset class="fieldset2">
+                    <legend class="legend1">
+                        Personal Details
+                    </legend>
+                    <!--                          
+                        Gender [Mandatory]
+                        Phone 1 [Mandatory]
+                        Phone 2
+                        Address 1 [Mandatory]
+                        Address 2
+                        City [Mandatory]
+                    -->
+                    <div class="genderDiv">
+                        <p class="attr">Gender&nbsp;<b>*</b></p>
+                        <div class="genderRadio">
+                            <div>
+                                <input type="radio" id="male" name="gender" value="male" checked required>
+                                <label for="male">Male</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="female" name="gender" value="female" required>
+                                <label for="female">Female</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="other" name="gender" value="other" required>
+                                <label for="other">Other</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="cnum" class="attr">Contact number&nbsp;<b>*</b></label>
+                        <input type="text" id="cnum" name="cnum" class="val tenMargin" value="9119091190"><!--required-->
+                    </div>
+                    <div class="row">
+                        <label for="acnum" class="attr">Alternate Contact number</label>
+                        <input type="text" id="acnum" name="acnum" class="val tenMargin" value="9900011111">
+                    </div>
+                    <div class="row">
+                        <label for="al1" class="attr1">Address Line 1&nbsp;<b>*</b></label>
+                        <textarea id="al1" name="al1" class="valAL" rows="4">Plot no.: 35, KathagadaSahi</textarea><!--required--> 
+                    </div>
+                    <div class="row">
+                        <label for="al2" class="attr1">Address Line 2&nbsp;</label>
+                        <textarea id="al2" name="al2" class="valAL" rows="4">near Tarini Mandir</textarea>
+                    </div>
+                    <div class="row">
+                        <label for="city" class="attr2">City&nbsp;<b>*</b></label>
+                        <input type="text" id="city" name="acnum" class="val" value="Cuttack"><!--reqired-->
+                    </div>
+                    <!--
+                        Selectable State list [Mandatory]
+                        Selectable Country list [Mandatory]
+                        Subscribe news letter?(yes/ no)
+                    -->
+                    <div class="row">
+                        <label for="state" class="attrState">State&nbsp;<b>*</b></label>
+                        <select id="state" name="state" class="valState" ><!--required-->
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                            <option value="Daman and Diu">Daman and Diu</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Lakshadweep">Lakshadweep</option>
+                            <option value="Puducherry">Puducherry</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha" selected>Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label for="country" class="valCountry">Country&nbsp;<b>*</b></label>
+                        <select id="country" name="country" class="valState" ><!--required-->
+                            <option value="India" selected>India</option>
+                        </select>
+                    </div>
+                    <div class="newsLetter">
+                        <p class="sNews">Subscribe news letter?</p>
+                        <div class="newsRadio">
+                            <div>
+                                <input type="radio" id="yes" name="newsLetter" value="yes">
+                                <label for="yes">yes</label>&nbsp;
+                            </div>
+                            <div>
+                                <input type="radio" id="no" name="newsLetter" value="no">
+                                <label for="no">no</label>&nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <p style="text-align: center"><img src="Images/refresh.png" width=39px height=39px onclick="refresh()">&nbsp;
+                    <b style="font-size: 25px" id="operand1">12</b>
+                    <b style="font-size: 25px" id="operator">/</b>
+                    <b style="font-size: 25px" id="operand2">6</b>
+                    <b style="font-size: 25px" id="exp">=</b>
+                    <input type="text" id="ans" class="val" style="width: 50px; font-size: 25px; font-weight: bold; text-align: center">
+                </p>
+                <input type="submit" value="SUBMIT" class="submit">
+            </form>
+        </div>
+        <script type="text/javascript">
+            var oper1 = document.getElementById("operand1"),
+            operator = document.getElementById("operator"),
+            oper2 = document.getElementById("operand2"),
+            ans = 2;
+
+            function getRandomInt(max) {
+                return Math.floor(Math.random() * Math.floor(max));
+            }
+            function isFloat(n){
+                return Number(n) === n && n % 1 !== 0;
+            }
+            function getEvaluate(a, b, c){
+                if(typeof a == 'string' || a instanceof String){
+                    a = parseInt(a);
+                }
+                if(typeof b == 'string' || b instanceof String){
+                    b = parseInt(b);
+                }
+                switch(c){
+                    case '+':
+                        return a+b;
+                    case '-':
+                        return a-b;
+                    case '*':
+                        return a*b;
+                    case '/':
+                        return a/b;
+                }
+            }
+            function refresh(){
+                var arr = ['+','-','*','/'];
+                var a = 0;
+                var b = 0;
+                var c = arr[0];
+                while(true){
+                    a = getRandomInt(100);
+                    b = getRandomInt(100);
+                    c = arr[getRandomInt(4)];
+                    ans = getEvaluate(a, b, c);
+                    if(isFloat(ans)){
+                        continue;
+                    } else if (ans > 99 || ans < 0){
+                        continue;
+                    }
+                    break;
+                }
+                oper1.innerHTML=a;
+                oper2.innerHTML=b;
+                operator.innerHTML=c;
+            }
+
+            function validateEach(key, val) {
+                switch(key){
+                    case "fname":
+                        var patt = /[^(a-zA-Z )]/g;
+                        if(!(patt.exec(val))){
+                            return true;
+                        }
+                        alert("You have entered an invalid first name!");
+                        return false;
+                        
+                    case "lname":
+                        var patt = /[^(a-zA-Z )]/g;
+                        if(!(patt.exec(val))){
+                            return true;
+                        }
+                        alert("You have entered an invalid last name!");
+                        return false;
+                        
+                    case "email":
+                        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                        if(val.match(mailformat)){
+                            return true;
+                        } else {
+                            alert("You have entered an invalid email address!");
+                            return false;
+                        }
+                        
+                    case "pwd":
+                        if(val.length >= 6){
+                            return true;
+                        } else {
+                            alert("Passsword length should be 6 or more than that!");
+                            return false;
+                        }
+
+                    case "cnum":
+                        var patt = /[^0-9]/g;
+                        if(val.length == 10){
+                            if(!patt.exec(val)){
+                                return true;
+                            } else {
+                                alert("You have entered an invalid phone number!");
+                                return false;
+                            }
+                        } else {
+                            alert("Please enter valid 10 digit contact number only!");
+                            return false;
+                        }
+
+                    case "acnum":
+                        var patt = /[^0-9]/g;
+                        if(val.length == 10){
+                            if(!patt.exec(val)){
+                                return true;
+                            } else {
+                                alert("You have entered an invalid phone number!");
+                                return false;
+                            }
+                        } else {
+                            alert("Please enter valid 10 digit contact number only!");
+                            return false;
+                        }
+
+                    case "city":
+                        var patt = /[^(a-zA-Z )]/g;
+                        if(!(patt.exec(val))){
+                            return true;
+                        }
+                        alert("You have entered an invalid city name!");
+                        return false;
+                      
+                }
+            }
+
+            function validateCpwd(valPwd, valCpwd){
+                if(valPwd === valCpwd){
+                    return true;
+                }
+                return false;
+            }
+            function validateform() {
+                var Customer = {
+                'fname' : document.getElementById("fname").value,
+                'lname' : document.getElementById("lname").value,
+                'email' : document.getElementById("email").value,
+                'pwd' : document.getElementById("pwd").value,
+                'cpwd' : document.getElementById("cpwd").value,
+
+                'cnum' : document.getElementById("cnum").value,
+                'acnum' : document.getElementById("acnum").value,
+                'al1' : document.getElementById("al1").value,
+                //'al2' : document.getElementById("al2").value,
+                
+                'city' : document.getElementById("city").value,
+                'state' : document.getElementById("state").value,
+                'country' : document.getElementById("country").value
+                };
+                var al2 = document.getElementById("al2").value,
+                m = document.getElementById("male").checked,
+                n = document.getElementById("female").checked,
+                o = document.getElementById("other").checked;
+                
+                for(var key in Customer) {
+                    if(Customer[key]==""){
+                        alert("\n\nPlease fill in the required details\n\n");
+                        return false;
+                    }
+                }
+                
+                for(var key in Customer) {
+                    if(key === "cpwd"){
+                        if(!validateCpwd(Customer["pwd"], Customer["cpwd"])){
+                            alert("Passwords entered do not match!\n Enter Again!");
+                            return false;
+                        }
+                    } else if(key==='al1' || key==='state' || key==='country'){
+                        continue;
+                    } else if(!validateEach(key, Customer[key])){
+                        return false;
+                    }
+                }
+                if(!(m || f || o)){
+                    alert("You have not selected any Gender option!");
+                    return false;
+                }
+                
+                while(true){
+                    if(document.getElementById("ans").value == ans){
+                        break;
+                    } else {
+                        alert("Captcha Validation failed!\n Try Again..");
+                        document.getElementById("ans").value = "";
+                        refresh();
+                        return false;
+                    }
+                }
+                alert("Form successfully submitted!");
+                return true;
+            }
+        </script>
+    </body>
+</html>
